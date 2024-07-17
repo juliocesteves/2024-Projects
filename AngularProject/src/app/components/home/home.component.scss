@@ -6,7 +6,6 @@ main {
     gap: 84px;
 }
 
-
 .main-section {
     display: flex;
     justify-content: center;
@@ -63,11 +62,14 @@ main {
     }
 }
 
-@media (min-width: 1080px) {
-    .main-section {
-        flex-direction: row;
-    }
+.cta-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
+@media (min-width: 1080px) {
+    .main-section,
     .benefit-section {
         flex-direction: row;
     }

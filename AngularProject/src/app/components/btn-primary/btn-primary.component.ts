@@ -12,8 +12,8 @@ type BtnVariants = "primary" | "secondary";
 })
 export class BtnPrimaryComponent {
   @Input("btn-text") btnText: string = "";
-  @Input("disabled") disabled: boolean = false;
-  @Input("loading") loading: boolean = false;
+  @Input() loading: boolean = false;
+  @Input() disabled: boolean = false;
   @Input() variant: BtnVariants = "primary";
 
   @Output("submit") onSubmit = new EventEmitter();
