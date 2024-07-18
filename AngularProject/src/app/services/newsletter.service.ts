@@ -15,7 +15,7 @@ export class NewsletterService {
 
 	sendData(name: string, email: string): Observable<NewsletterResponse>{
 		const data = { name, email };
-		
+		console.log(data);
 		return this.http.post<NewsletterResponse>(this.endpointUrl, data);
 	}
 }
