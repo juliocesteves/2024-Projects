@@ -1,0 +1,5 @@
+<div class="field">
+    <input type="text" #usernameModel="ngModel" name="username" [(ngModel)]="username" required />
+    <span class="error-validator" *ngIf="usernameModel.errors?.['required']" >Username is required.</span>
+</div>
+<router-outlet />

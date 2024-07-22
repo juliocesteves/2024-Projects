@@ -1,0 +1,13 @@
+.field {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.error-validator {
+    color: red;
+    font-size: 15px;
+    font-weight: 600;
+    margin: 10px 0;
+}
